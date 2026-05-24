@@ -1,0 +1,326 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.sirivennela-regular {
+  font-family: "Sirivennela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.cinzel{
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    height:100vh;
+    overflow-x:hidden;
+    background:
+    linear-gradient(
+    to bottom,
+        #f8f3f4 0%,
+        #f7f0f2 40%,
+        #f9f4f5 100%
+    );
+}
+.header{
+    width:100%;
+    height:200px;
+    overflow:hidden;
+}
+.header-image{
+    width:100%;
+    height:200px;
+    display:block;
+    object-fit:cover;
+}
+.menu-panel{
+    width:100%;
+    height:58px;
+    background:#F0D8DE;
+	border-top:1px solid #BDB5B5;
+    border-bottom:1px solid #BDB5B5;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 28px;
+}
+.logo-button{
+    text-decoration:none;
+    color:#6e5b61;
+	font-family: "Cinzel", serif;
+    font-size:16px;
+    letter-spacing:2px;
+    font-weight:500;
+}
+.menu-buttons{
+    display:flex;
+    gap:18px;
+}
+.dropdown{
+    position:relative;
+}
+.menu-buttons a{
+    text-decoration:none;
+    width:130px;
+    height:42px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:transparent;
+    color:#876f77;
+    border-radius:20px;
+	border:1px solid #98979C;
+    font-size:14px;
+    letter-spacing:1px;
+    cursor:default;
+}
+.submenu{
+    position:absolute;
+    top:42px;
+    left:0;
+    display:none;
+    width:130px;
+    background:#fff7f9;
+    border-radius:18px;
+    overflow:hidden;
+}
+.submenu a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    height:42px;
+    color:#876f77;
+    font-size:13px;
+    background:#fff7f9;
+	border:none;
+}
+.submenu a:hover{
+    background:#f6e8ed;
+}
+.dropdown:hover .submenu{
+    display:block;
+}
+.page-title{
+    width:1118px;
+    margin:50px auto 10px auto;
+    text-align:left;
+}
+.page-title h1{
+    font-size:42px;
+    color:#5e4a50;
+    letter-spacing:4px;
+    margin-bottom:10px;
+}
+.page-title p{
+    font-size:14px;
+    color:#9b858c;
+    margin-bottom:20px;
+}
+.title-line{
+   width:100%;
+   height:10px;
+   background:#EBDDDD;
+   border-radius: 2px;
+}
+.food-wrapper{
+    width:1118px;
+    margin:40px auto;
+    text-align:center;
+}
+.food-card{ 
+    position:relative; 
+	width:320px; 
+	height:500px; 
+	transition:0.3s; 
+	display:inline-block; 
+	vertical-align:top; 
+	margin: 10px 25px; 
+	text-align:left;
+}
+.food-card:hover{
+    transform:scale(1.05);
+}
+.omamori{
+    width:100%;
+	height:88%;
+    display:block;
+}
+.food-image{
+    position:absolute;
+    top:85px;
+    left:50%;
+    transform:translateX(-50%);
+    width:240px;
+	object-fit:cover;
+	border-radius:8px;
+	height:160px;
+	filter:brightness(1.15) saturate(0.6) opacity(90%);
+}
+.food-info{
+    position:absolute;
+    top:255px;
+    left:35px;
+    width:250px;
+}
+.food-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+.food-header h2{
+    font-size:19px;
+    color:#544247;
+}
+.jp-name{
+    font-size:13px;
+    color:#a58c93;
+    margin-top:2px;
+}
+.price{
+	margin-top:1px;
+    font-size:18px;
+    color:#7b5d66;
+}
+.food-info hr{
+    border:none;
+    border-top:2px solid #d8c6cb;
+    margin:8px 0;
+}
+.description{
+    font-size:14px;
+    color:#736167;
+    line-height:1.4;
+    margin-bottom:8px;
+}
+.buy-btn{
+    width:100%;
+    height:42px;
+    border:none;
+    border-radius:999px;
+    background:#f4dfe6;
+    color:#6a555c;
+    font-size:14px;
+    cursor:pointer;
+}
+.footer{
+    width:100%;
+    background:#1f1c22;
+    padding:50px 70px;
+    margin-top:80px;
+    color:#f3dfe5;
+}
+.footer-left,
+.footer-middle,
+.footer-right{
+    display:inline-block;
+    vertical-align:top;
+}
+.footer-left{
+    width:30%;
+}
+.footer-middle{
+    width:28%;
+    margin-left:40px;
+}
+.footer-right{
+    width:32%;
+    margin-left:40px;
+}
+.footer-logo{
+    width:180px;
+    margin-bottom:18px;
+}
+.footer-motto{
+    font-size:15px;
+    color:#d8bcc5;
+    line-height:1.7;
+    width:240px;
+	font-family: "Sirivennela", sans-serif;
+}
+.footer h3{
+    font-size:20px;
+    margin-bottom:20px;
+    letter-spacing:2px;
+    color:#f6dfe6;
+}
+.footer-middle a{
+    display:block;
+    text-decoration:none;
+    color:#ead7dc;
+    margin-bottom:18px;
+    font-size:16px;
+}
+.social-icon{
+    width:22px;
+	height:22px;
+    vertical-align:middle;
+    margin-right:12px;
+	border-radius:50%;
+	object-fit:cover;
+}
+.email-box{
+    width:100%;
+    height:42px;
+    border:none;
+    background:#2a262d;
+    color:#f4dfe6;
+    padding-left:15px;
+    margin-bottom:14px;
+    border-radius:10px;
+}
+.signup-row{
+    width:100%;
+}
+.name-box{
+    width:58%;
+    height:42px;
+    border:none;
+    background:#2a262d;
+    color:#f4dfe6;
+    padding-left:15px;
+    border-radius:10px;
+}
+.signup-btn{
+    width:36%;
+    height:42px;
+    border:none;
+    background:#e7cfd7;
+    color:#4f4348;
+    border-radius:999px;
+    margin-left:10px;
+    cursor:pointer;
+    font-size:14px;
+}
+.signup-btn:hover{
+    background:#f3dfe5;
+}
+.home-banner{
+    width:1000px;
+    margin:20px auto;
+}
+.banner-image{
+    width:100%;
+    border-radius:10px;
+    display:block;
+}
+.login-menu{
+	display:inline-block;
+	width:120px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	text-decoration:none;
+	background:#1f1c22;
+	color:#f3dfe5;
+	border-radius:999px;
+	font-size:16px;
+	letter-spacing:1px;
+	transition:0.2s;
+}
+
+.login-menu:hover{
+	background:#353039;
+}

@@ -1,0 +1,103 @@
+body{
+    margin:0;
+    background:#f4ecef;
+	overflow:hidden;
+}
+
+.sirivennela-regular {
+  font-family: "Sirivennela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel{
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.login-page{
+	width:100%;
+	height:100vh;
+}
+
+.login-image{
+    width:55%;
+	height:100vh;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.login-image img{
+    width:100%;
+	height:100vh;
+	object-fit:cover;
+	display:block;
+}
+
+.login-box{
+    width:44%;
+	height:100vh;
+	display:inline-block;
+	vertical-align:top;
+	background:#171518;
+	text-align:center;
+	padding-top:70px;
+}
+
+.login-box h1{
+    font-size:64px;
+	letter-spacing:8px;
+	color:#f3dfe5;
+	margin-bottom:-20px;
+	font-family: "Cinzel", serif;
+}
+
+.login-subtitle{
+    font-size:20px;
+	color:#b89aa4;
+	margin-bottom:50px;
+	font-family: "Sirivennela", sans-serif;
+}
+
+.login-input{
+	width:320px;
+	height:48px;
+	margin-bottom:22px;
+	background:#262228;
+	border:none;
+	border-radius:10px;
+	padding-left:20px;
+	font-size:15px;
+	color:#f5e8ec;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.login-input::placeholder{
+    color:#a58d95;
+}
+
+.login-btn{
+	width:320px;
+	height:48px;
+	border:none;
+	border-radius:999px;
+	background:#f0d5dd;
+	color:#544247;
+	font-size:15px;
+	cursor:pointer;
+	margin-top:10px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.login-btn:hover{
+    background:#f7e5ea;
+}
+
+.login-link{
+	text-decoration:none;
+}
